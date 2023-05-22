@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	justify-content: center;
+}
+
+.border_right {
+	border: 2px solid #ccc;
+	border-right: none;
+	position: relative;
+	
+  }
+  
+  .border_right:before {
+	content: "";
+	position: absolute;
+	right: -16px;
+	top: -3px;
+	width: 0;
+	height: 0;
+	border-top: 17px solid transparent;
+	border-bottom: 17px solid transparent;
+	border-left: 17px solid #ccc;
+  }
+  .border_left {
+	border: 2px solid #ccc;
+	border-left: none;
+	position: relative;
+  }
+  
+  .border_left:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -17px;
+	border-top: 17px solid transparent;
+	border-bottom: 17px solid transparent;
+	border-right: 17px solid #ccc;
+	transform: translateY(-50%);
+  }
